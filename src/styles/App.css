@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root {
+    --clrBase: #D2E8E3;
+    --clrWord: #2C3532;
+    --clrHighlight: #0F6466;
+    --clrBacklight: #1c9a9c;
+    --clrCaque: #fdddbf;
+    --clrDarkCaque: #D8B08C;
+    --clrShadow: #00000096;
+    --roboto: 'Roboto', sans-serif;
+    --grenze: 'Grenze', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clrBase);
+    padding: 20px;
+}
+
+main {
+    background-color: var(--clrCaque);
+    box-shadow: 0px 0px 10px var(--clrShadow);
+    border-radius: 10px;
+    max-width: 1240px;
+    margin: 4rem auto;
+    overflow: hidden;
+}
+
+section.articles {
+    background-color: var(--clrCaque);
+    padding: 2rem;
+}
+
+section.articles2 {
+    background-color: var(--clrDarkCaque);
+    padding: 2rem;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root {
+    --clrBase: #D2E8E3;
+    --clrWord: #2C3532;
+    --clrHighlight: #0F6466;
+    --clrBacklight: #1c9a9c;
+    --clrComments: #fdf3ea;
+    --clrCaque: #fdddbf;
+    --clrDarkCaque: #D8B08C;
+    --clrShadow: #00000096;
+    --roboto: 'Roboto', sans-serif;
+    --grenze: 'Grenze', serif;
+}
+
+#section-comments {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.2rem;
+
+    background-color: var(--clrBase);
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px var(--clrShadow);
+    border-radius: 5px;
+}
+
+#section-comments #comments {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--clrHighlight);
+    border-radius: 30px 30px 30px 0px;
+    padding: 1rem 1rem;
+}
+
+#section-comments #comments img {
+    background-color: var(--clrBase);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#section-comments #comments p {
+    font-family: var(--roboto);
+    color: var(--clrBase);
+    text-align: justify;
+    cursor: default;
+}
+
+#section-comments #comments-buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+#section-comments button {
+    background-color: var(--clrHighlight);
+    color: var(--clrBase);
+    font-family: var(--roboto);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #0000008f;
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+#section-comments button:hover {
+    background-color: var(--clrBacklight);
+    transform: translateY(-5px);
+    transition: .5s all;
+}

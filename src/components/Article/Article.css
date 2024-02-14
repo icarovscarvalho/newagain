@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+:root {
+    --clrBase: #D2E8E3;
+    --clrWord: #2C3532;
+    --clrHighlight: #0F6466;
+    --clrBacklight: #1c9a9c;
+    --clrCaque: #fdddbf;
+    --clrDarkCaque: #D8B08C;
+    --clrShadow: #00000096;
+    --roboto: 'Roboto', sans-serif;
+    --grenze: 'Grenze', serif;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+article a {
+    text-decoration: none;
+    color: #000;
+}
+
+article img {
+    width: 150px;
+    height: 110px;
+}
+
+article .article-infos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @media (max-width: 600px) {
+        align-items: flex-start;
+    }
+}
+
+article .article-infos h2 {
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+}
+
+article .article-infos h3 {
+    font-size: 1rem;
+    color: var(--clrWord);
+    text-align: justify;
+}
+
